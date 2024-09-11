@@ -6,12 +6,21 @@ nota passando o valor da nota e o índice, um método para retornar o valor de u
 passando o índice e um método para calcular e retornar a média
 */
 
-public class Aluno
+/*
+verifique se é possível usar herança em relação à classe Pessoa. Se for
+possível, modifique a classe aluno da maneira adequada
+*/
+
+public class Aluno    /* nome da classe é com letra maiuscula */
 {
   string nome;
   string endereco;
   string telefone;
   string email;
+  int nota1;
+  int nota2;
+  int nota3;
+  int nota4;
 
   public void setNome(String nome) { this.nome = nome; }
   public String getNome() { return this.nome; }
@@ -21,4 +30,16 @@ public class Aluno
   public String getEndereco() { return this.telefone; }
   public void setEmail(String email) { this.email = email; }
   public String getEmail() { return this.email; }
+
+  public void insereNota ()
+  {
+  }
+
+  public void retornaNota ()
+  {
+  }
+
+  public void calculaMedia ()
+  {
+  }
 }
