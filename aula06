@@ -1,0 +1,24 @@
+
+/*
+Construa uma classe Aluno que possua os atributos nome, endereco, email, telefone e 4
+notas. Escreva os métodos get e set para os atributos da classe, um método para inserir uma
+nota passando o valor da nota e o índice, um método para retornar o valor de uma nota
+passando o índice e um método para calcular e retornar a média
+*/
+
+public class Aluno
+{
+  string nome;
+  string endereco;
+  string telefone;
+  string email;
+
+  public void setNome(String nome) { this.nome = nome; }
+  public String getNome() { return this.nome; }
+  public void setEndereco(String endereco) { this.endereco = endereco; }
+  public String getEndereco() { return this.endereco; }
+  public void setTelefone(String telefone) { this.telefone = telefone; }
+  public String getEndereco() { return this.telefone; }
+  public void setEmail(String email) { this.email = email; }
+  public String getEmail() { return this.email; }
+}
