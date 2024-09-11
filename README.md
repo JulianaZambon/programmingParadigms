@@ -1,1 +1,1 @@
-# paradigmasPrograma-o
+# paradigmasProgramacao
