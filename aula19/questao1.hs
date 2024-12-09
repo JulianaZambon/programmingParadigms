@@ -6,5 +6,23 @@
 True
 --}
 
+-- Define o tipo da função
 tem_comuns :: [Char] -> [Char] -> Bool
-tem_comuns [] _ = False -- se a primeira lista for vazia, nao tem como ter caracteres comuns (Caso base)
+
+-- Caso base: se a primeira lista for vazia, não pode haver caracteres em comum
+tem_comuns [] _ = False
+
+-- Caso base: se a segunda lista for vazia, também não há caracteres em comum
+tem_comuns _ [] = False
+
+-- Passo recursivo
+tem_comuns (x:xs) ys
+  | verifica x ys = True -- Se x está em ys, retorna True
+  | otherwise = tem_comuns xs ys -- Caso contrário, verifica o restante da lista
+
+-- Função auxiliar para verificar se um caractere está na lista
+verifica :: Char -> [Char] -> Bool
+verifica _ [] = False -- Se a lista é vazia, o caractere não está presente
+verifica c (y:ys)
+  | c == y = True -- Se o caractere c é igual ao primeiro elemento, retorna True
+  | otherwise = verifica c ys -- Continua verificando o restante da lista
