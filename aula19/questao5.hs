@@ -7,4 +7,15 @@
 "bdef"
 --}
 
+-- Define o tipo da função
 fatia :: [a] -> Int -> Int -> [a]
+
+-- Implementação da função
+fatia lista i k = take (k - i + 1) (drop i lista)
+-- A função `drop` remove os primeiros `i` elementos da lista.
+-- Ela retorna o restante da lista começando do elemento de índice `i`.
+-- Exemplo: drop 2 [1,2,3,4,5] => [3,4,5]
+
+-- A função `take` pega os primeiros `n` elementos da lista fornecida.
+-- No caso, pegamos (k - i + 1) elementos a partir do índice `i`, já que `drop` ajusta a posição inicial.
+-- Exemplo: take 3 [3,4,5,6] => [3,4,5]
