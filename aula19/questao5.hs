@@ -11,7 +11,11 @@
 fatia :: [a] -> Int -> Int -> [a]
 
 -- Implementação da função
-fatia lista i k = take (k - i + 1) (drop i lista)
+fatia lista i k = take (k - i + 1) (drop (i - 1) lista)
+
+
+
+
 -- A função `drop` remove os primeiros `i` elementos da lista.
 -- Ela retorna o restante da lista começando do elemento de índice `i`.
 -- Exemplo: drop 2 [1,2,3,4,5] => [3,4,5]
