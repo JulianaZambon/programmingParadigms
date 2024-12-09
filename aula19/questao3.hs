@@ -6,4 +6,11 @@
 15
 --}
 
+-- Define o tipo da função
 fatduplo :: Int -> Int
+
+-- Caso base: o fatorial duplo de 1 é 1
+fatduplo 1 = 1
+
+-- Caso geral: N multiplicado pelo fatorial duplo de N-2
+fatduplo n = n * fatduplo (n - 2)
